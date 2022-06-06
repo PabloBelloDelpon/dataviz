@@ -1,1 +1,3 @@
-![alt text](https://github.com/PabloBelloDelpon/dataviz/blob/fc42c174aca9c480166d8caaa3f440f92ad18917/02bourdieu_parsons/plot_bourdieu_parsons.png)
+![alt text](https://github.com/PabloBelloDelpon/dataviz/blob/e7744cd682136aa0f9ebc3a8bf176084b500b18d/03merton_coleman/merton_colemanV1.png)
+
+
