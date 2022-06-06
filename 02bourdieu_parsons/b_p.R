@@ -9,14 +9,14 @@ source("helper_functions.R")
 
 
 ###--- Get the data from Google Ngram
-# tbl <- ngramr::ngram(phrases = c("Bourdieu","Parsons"),
-#               corpus = "eng_2019",
-#               year_start = 1800,
-#               aggregate = TRUE,
-#               smoothing = 3,
-#               case_ins = TRUE)
-# 
-# saveRDS(tbl,"02bourdieu_parsons/ngram_bourdieu_parsons.RDS")
+tbl <- ngramr::ngram(phrases = c("Pierre Bourdieu","Talcott Parsons"),
+              corpus = "eng_2019",
+              year_start = 1800,
+              aggregate = TRUE,
+              smoothing = 3,
+              case_ins = TRUE)
+
+saveRDS(tbl,"02bourdieu_parsons/ngram_bourdieu_parsons.RDS")
 
 ###--- Read the data
 tbl <- readRDS("02bourdieu_parsons/ngram_bourdieu_parsons.RDS")
@@ -89,7 +89,7 @@ tbl2 %>%
   annotate("text", x = books_b_year, y = freq_b_books + c(3,3,4), label = books_b,family = font,size = 20/.pt)
 
 
-ggsave("02bourdieu_parsons/plot_bourdieu_parsons.png",dpi=320,width = 30,height = 40,units = "cm")  
+ggsave("02bourdieu_parsons/plot_bourdieu_parsons2.png",dpi=320,width = 30,height = 40,units = "cm")  
 
 showtext_auto(FALSE)
 
