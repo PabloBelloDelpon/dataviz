@@ -1,3 +1,4 @@
-![alt text](https://github.com/PabloBelloDelpon/dataviz/blob/e7744cd682136aa0f9ebc3a8bf176084b500b18d/03merton_coleman/merton_colemanV1.png)
+![alt text](https://github.com/PabloBelloDelpon/dataviz/blob/3d9983768dcdecb248e81ad91c9bb0950e783fcc/06sociology_viz/fig.png)
+
 
 
