@@ -80,12 +80,12 @@ tbl_top20 <-
     journal)) |> 
   left_join(labels) |> 
   left_join(titles) |> 
-  mutate(title = str_replace(title, "Of", "of"),
-         title = str_replace(title, "And", "and"),
-         title = str_replace(title, "For", "for"),
-         title = str_replace(title, "In", "in"),
-         title = str_replace(title, "To", "to"),
-         title = str_replace(title, "With", "with")) |> 
+  mutate(title = str_replace(title, "Of ", "of "),
+         title = str_replace(title, "And ", "and "),
+         title = str_replace(title, "For ", "for "),
+         title = str_replace(title, "In ", "in "),
+         title = str_replace(title, "To ", "to "),
+         title = str_replace(title, "With ", "with ")) |> 
   mutate(title_abb = ifelse(is.na(title_abb) == TRUE, title, title_abb),
          title2 = paste(title_abb, "\n", authors)) 
 
@@ -116,5 +116,5 @@ tbl_top20 |>
                family = font)
 
 
-ggsave("06sociology_viz/fig.png", width = 8.54*2, height = 6.15*2.5, dpi = 600)
+ggsave("06sociology_viz/fig.png", width = 8.54*2, height = 6.15*2.5, dpi = 300)
 ggsave("06sociology_viz/fig.pdf", width = 8.54*2, height = 6.15*2.5, dpi = 600)
